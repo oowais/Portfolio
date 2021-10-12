@@ -27,7 +27,7 @@ jobs:
           (echo y; echo y; echo y; echo y;) | sudo npm install -g @angular/cli
           npm run build --prod
           cd dist
-          mv speech2text-web docs
+          mv Portfolio docs
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:

@@ -1,0 +1,17 @@
+<mat-sidenav-container class="container">
+  <mat-sidenav #drawer mode="side" class="sidenav">
+    <span>test</span>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button color="accent" aria-label="To toggle sidenav" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Welcome to Owais' Portfolio</span>
+      <button class="mat-elevation-z2 btn" mat-flat-button color="accent">Primary</button>
+    </mat-toolbar>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

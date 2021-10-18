@@ -7,13 +7,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { AboutMeComponent } from './about-me/about-me.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { InterestsComponent } from './components/interests/interests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,

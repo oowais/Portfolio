@@ -11,3 +11,16 @@ body {
 * {
   font-family: 'Noto Sans Mono', monospace;
 }
+
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

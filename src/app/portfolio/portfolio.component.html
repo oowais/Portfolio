@@ -1,6 +1,6 @@
 <mat-sidenav-container class="container">
   <mat-sidenav #drawer mode="side" class="sidenav">
-    <span>test</span>
+    <span>Under Development <3</span>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -9,10 +9,12 @@
         <mat-icon>menu</mat-icon>
       </button>
       <span class="spacer"></span>
-      <span class="btn">Welcome to Owais' Portfolio</span>
+      <span>Welcome to Owais' Portfolio</span>
       <span class="spacer"></span>
       <button class="mat-elevation-z2 btn" mat-flat-button color="accent">Primary</button>
     </mat-toolbar>
-
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
+      <app-about-me></app-about-me>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

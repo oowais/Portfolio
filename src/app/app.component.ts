@@ -1,6 +1,7 @@
 import {Component, ElementRef, HostBinding, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {DataService} from './data.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 
 @Component({
@@ -15,30 +16,36 @@ export class AppComponent {
   @HostBinding('class') className = '';
   @ViewChild('main', {static: true}) myDiv: ElementRef | undefined;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService,
+              private _snackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
     this.toggleControl.valueChanges.subscribe((mode) => {
       const darkClassName = 'dark-mode';
       const lightClassName = 'light-mode';
+      let toBeRemovedClass;
+      let toBeAddedClass;
 
       if (mode) {
-        (this.myDiv as ElementRef).nativeElement.classList.remove(darkClassName);
-        (this.myDiv as ElementRef).nativeElement.classList.add(lightClassName);
+        toBeRemovedClass = darkClassName;
+        toBeAddedClass = lightClassName;
       } else {
-        (this.myDiv as ElementRef).nativeElement.classList.remove(lightClassName);
-        (this.myDiv as ElementRef).nativeElement.classList.add(darkClassName);
+        toBeRemovedClass = lightClassName;
+        toBeAddedClass = darkClassName;
       }
+      (this.myDiv as ElementRef).nativeElement.classList.remove(toBeRemovedClass);
+      (this.myDiv as ElementRef).nativeElement.classList.add(toBeAddedClass);
 
+      this._snackBar.open('Switched to ' + toBeAddedClass, 'close', {duration: 2000});
     });
   }
 
   goToSourceCode(): void {
-    window.open(this.sourceCodeUrl, "_blank");
+    this.dataService.openLink(this.sourceCodeUrl);
   }
 
-  openResume () {
+  openResume() {
     this.dataService.openFile('../assets/Resume.pdf');
   }
 }

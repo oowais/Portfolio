@@ -1,0 +1,155 @@
+<mat-card class="work-ex-card">
+  <mat-card-title>Work Experience</mat-card-title>
+</mat-card>
+<mat-accordion class="work-ex-headers-align">
+  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <b>Student Research Scientist</b>
+      </mat-panel-title>
+      <mat-panel-description>
+        <span>Sep 2018 - Sep 2021</span>
+        <div>
+          Fraunhofer FKIE
+          <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
+                  (click)="openLink('https://www.fkie.fraunhofer.de/')">
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+        </div>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-list class="list">
+      <mat-list-item>Created and delivered UI services for demo purposes.</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Developed and maintained XML validation software in Java EE.</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Developed REST services using Django framework in Python.</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Successfully finished master thesis 'Unsupervised Link Discovery Between</div>
+        <div mat-line>Unstructured Text and Taxonomy' during the student research scientist job.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Developed and maintained map related UI in Angular 8 allowing to modify</div>
+        <div mat-line>elements on the map using mouse and voice recognition.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Prepared a variety of different written communications,</div>
+        <div mat-line> reports and documents to ensure smooth operations.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Proved successful working within tight deadlines and fast-paced atmosphere.</mat-list-item>
+    </mat-list>
+    <mat-action-row>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <b>Systems Engineer</b>
+      </mat-panel-title>
+      <mat-panel-description>
+        <span>Aug 2014 - Oct 2017</span>
+        <div>
+          Tata Consultancy Services
+          <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
+                  (click)="openLink('https://www.tcs.com/')">
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+        </div>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-list class="list">
+      <mat-list-item>
+        <div mat-line>Ericsson Network Manager(ENM): ENM is a collection of virtual management tools</div>
+        <div mat-line>based on a single software platform designed to provide unified network management</div>
+        <div mat-line>capability across Radio access, Transport, and Core networks.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Developed the UI of “Link Management” module for creating and managing links</div>
+        <div mat-line> between network elements as part of ENM.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Developed software functionalities using Node.js, the JavaScript runtime</div>
+        <div mat-line> environment, Java EE and REST.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Produced Integration tests for the modules created using Arquillian and</div>
+        <div mat-line> later on tested the same on Docker images.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Helped pass on the knowledge to the new hires by training them in aforementioned</div>
+        <div mat-line> modules and regarding coding practices/guidelines.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Worked on minimizing the resources held by Jboss EAP servers in a cluster</div>
+        <div mat-line>environment to increase the efficiency.</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Managed development milestones from initial steps through final delivery.</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Coordinated with other engineers to evaluate and improve software interfaces.
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>Reviewed code, debugged problems and corrected issues.</mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <div mat-line>Consulted with engineering team members to determine system loads and</div>
+        <div mat-line> develop improvement plans.</div>
+      </mat-list-item>
+    </mat-list>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <b>Computer Engineer (Trainee)</b>
+      </mat-panel-title>
+      <mat-panel-description>
+        <span>May 2013 - Jun 2013</span>
+        <div>
+          Dion Global Solutions
+          <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
+                  (click)="openLink('https://www.dionglobal.com/')">
+            <mat-icon>open_in_new</mat-icon>
+          </button>
+        </div>
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-list class="list">
+      <mat-list-item>
+        Aided in analyzing and migrating the code from Java SE 5 to 6.
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        Learnt basics of Android programming and database management.
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        Created product design modifications.
+      </mat-list-item>
+    </mat-list>
+
+    <mat-action-row>
+      <button mat-button color="warn" (click)="prevStep()">Previous</button>
+      <button mat-button color="primary" (click)="nextStep()">End</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+</mat-accordion>

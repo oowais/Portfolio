@@ -11,13 +11,15 @@ import {AboutMeComponent} from './components/about-me/about-me.component';
 import {InterestsComponent} from './components/interests/interests.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
     AboutMeComponent,
-    InterestsComponent
+    InterestsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

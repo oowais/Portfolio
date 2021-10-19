@@ -22,4 +22,8 @@ export class DataService {
       }
     });
   }
+
+  openLink(url: string) {
+    window.open(url, "_blank");
+  }
 }

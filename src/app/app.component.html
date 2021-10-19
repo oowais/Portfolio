@@ -1,3 +1,27 @@
-<div class="dark-mode">
-  <router-outlet></router-outlet>
+<div #main class="dark-mode">
+  <mat-sidenav-container class="container">
+    <mat-sidenav #drawer mode="side" class="sidenav">
+      <button class="mat-elevation-z2 btn source-code-btn" mat-flat-button color="accent" (click)="goToSourceCode()">
+        Source code
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar color="primary">
+        <button mat-icon-button color="accent" aria-label="To toggle sidenav" (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="spacer"></span>
+        <span>Welcome to Owais' Portfolio</span>
+        <span class="spacer"></span>
+        <p>
+          <mat-icon class="slider">nightlight_round</mat-icon>
+          <mat-slide-toggle [formControl]="toggleControl" class="slider"></mat-slide-toggle>
+          <mat-icon class="slider">wb_sunny</mat-icon>
+        </p>
+      </mat-toolbar>
+      <app-portfolio></app-portfolio>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

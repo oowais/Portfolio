@@ -21,7 +21,9 @@ $angular-default-theme: mat.define-light-theme(
     )
 );
 
-@include mat.all-component-themes($angular-default-theme);
+.light-mode {
+  @include mat.all-component-themes($angular-default-theme);
+}
 
 // Dark theme
 $angular-dark-theme: mat.define-dark-theme(
@@ -37,8 +39,6 @@ $angular-dark-theme: mat.define-dark-theme(
 .dark-mode {
   @include mat.all-component-colors($angular-dark-theme);
 }
-
-/* You can add global styles to this file, and also import other style files */
 
 html, body {
   height: 100%;

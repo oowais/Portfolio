@@ -13,6 +13,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EducationComponent } from './components/education/education.component';
     AboutMeComponent,
     InterestsComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

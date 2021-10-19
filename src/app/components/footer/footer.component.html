@@ -1,17 +1,24 @@
 <mat-card>
   <div style="text-align:center;">
     <mat-card-content>
-      <button class="mat-elevation-z2 source-code-btn btn footer" mat-button color="accent"
+      <button class="mat-elevation-z2 source-code-btn btn footer" mat-flat-button color="accent"
+              (click)="openLink('https://www.google.com/maps/place/Bonn/')">
+        <mat-icon class="footer-items">place</mat-icon>
+        Bonn, NW
+      </button>
+      •
+      <button class="mat-elevation-z2 source-code-btn btn footer-items" mat-flat-button color="accent"
+              onclick="parent.location='mailto:oowais@gmail.com'">
+        <mat-icon class="footer-items">email</mat-icon>
+        Contact via email
+      </button>
+      •
+      <button class="mat-elevation-z2 source-code-btn btn footer-items" mat-flat-button color="accent"
               (click)="openLink('https://github.com/oowais')">
         Github
-      </button> •
-      <mat-icon class="footer">place</mat-icon>
-      Bonn, NW •
-      <mat-icon class="footer">call</mat-icon>
-      +49 176 577 80919 •
-      <mat-icon class="footer">email</mat-icon>
-      oowais@gmail.com •
-      <button class="mat-elevation-z2 source-code-btn btn" mat-button color="accent"
+      </button>
+      •
+      <button class="mat-elevation-z2 source-code-btn btn" mat-flat-button color="accent"
               (click)="openLink('https://oowais.github.io/')">
         Portfolio
       </button>

@@ -1,15 +1,15 @@
-<mat-card class="work-ex-card">
+<mat-card class="work-ex-card btn">
   <mat-card-title>Work Experience</mat-card-title>
 </mat-card>
 <mat-accordion class="work-ex-headers-align">
   <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
-      <mat-panel-title>
+      <mat-panel-title matTooltip="Job title">
         <b>Student Research Scientist</b>
       </mat-panel-title>
       <mat-panel-description>
-        <span>Sep 2018 - Sep 2021</span>
-        <div> Fraunhofer FKIE
+        <span matTooltip="Job duration">Sep 2018 - Sep 2021</span>
+        <div matTooltip="Company"> Fraunhofer FKIE
           <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
                   (click)="openLink('https://www.fkie.fraunhofer.de/')">
             <mat-icon>open_in_new</mat-icon>
@@ -48,12 +48,12 @@
 
   <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
-      <mat-panel-title>
+      <mat-panel-title matTooltip="Job title">
         <b>Systems Engineer</b>
       </mat-panel-title>
       <mat-panel-description>
-        <span>Aug 2014 - Oct 2017</span>
-        <div>
+        <span matTooltip="Job duration">Aug 2014 - Oct 2017</span>
+        <div matTooltip="Company">
           Tata Consultancy Services
           <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
                   (click)="openLink('https://www.tcs.com/')">
@@ -116,12 +116,12 @@
 
   <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
-      <mat-panel-title>
+      <mat-panel-title matTooltip="Job title">
         <b>Computer Engineer (Trainee)</b>
       </mat-panel-title>
       <mat-panel-description>
-        <span>May 2013 - Jun 2013</span>
-        <div>
+        <span matTooltip="Job duration">May 2013 - Jun 2013</span>
+        <div matTooltip="Company">
           Dion Global Solutions
           <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
                   (click)="openLink('https://www.dionglobal.com/')">

@@ -13,6 +13,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatListModule,
     MatDividerModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule
   ],
   exports: [
     CommonModule,
@@ -45,7 +47,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatListModule,
     MatDividerModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule
   ]
 })
 export class MaterialModule {

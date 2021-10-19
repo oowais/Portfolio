@@ -1,4 +1,4 @@
-<mat-card class="ed-card">
+<mat-card class="btn">
   <mat-card-title>Education</mat-card-title>
 </mat-card>
 
@@ -7,12 +7,31 @@
     <mat-card class="ed-card">
       <mat-card-subtitle><b>Master of Science in Media Informatics</b></mat-card-subtitle>
       <mat-card-content>
-        Score 1.8 (German scale)
+        1.8 grade (German scale) <br/>
         RWTH Aachen University, Germany
       </mat-card-content>
     </mat-card>
   </mat-tab>
-  <mat-tab label="Bachelors">Content 2</mat-tab>
-  <mat-tab label="Senior school">Content 3</mat-tab>
-  <mat-tab label="Secondary school">Content 3</mat-tab>
+
+  <mat-tab label="Bachelors">
+    <mat-card class="ed-card">
+      <mat-card-subtitle><b>Bachelor of Technology in Computer Engineering</b></mat-card-subtitle>
+      <mat-card-content>
+        7.9/10 <br/>
+        Jama Millia Islamia, India
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+
+  <mat-tab label="Courses">
+    <mat-card class="ed-card">
+      <mat-card-subtitle><b>Relevant courses studied in curriculum:</b></mat-card-subtitle>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let course of courses">{{course}}<mat-divider></mat-divider></mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-tab>
+
 </mat-tab-group>

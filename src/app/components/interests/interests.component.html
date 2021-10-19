@@ -3,9 +3,12 @@
     <mat-card-title>Interests and Skills</mat-card-title>
   </mat-card-title-group>
   <mat-card-content>
-    <div class="interests-txt">
-      Angular, Python, Angular material, Typescript, JavaScript, Node.js, Java, REST, Natural language processing, SQL, MongoDB, Flask,
-      Django, Docker, Maven, Git, Agile methodology, Continuous integration and development, Github actions.
+    <div >
+      <mat-chip-list class="interests-txt">
+        <mat-chip *ngFor="let interest of interests">
+          {{interest}}
+        </mat-chip>
+      </mat-chip-list>
     </div>
   </mat-card-content>
 </mat-card>

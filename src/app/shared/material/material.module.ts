@@ -11,6 +11,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatExpansionModule,
     MatSnackBarModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule
   ],
   exports: [
     CommonModule,
@@ -39,7 +41,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatExpansionModule,
     MatSnackBarModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule
   ]
 })
 export class MaterialModule {

@@ -10,6 +10,7 @@ import {PortfolioComponent} from './portfolio/portfolio.component';
 import {AboutMeComponent} from './components/about-me/about-me.component';
 import {InterestsComponent} from './components/interests/interests.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     BrowserAnimationsModule,
     SharedModule,
     FlexLayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

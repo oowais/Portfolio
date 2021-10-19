@@ -1,5 +1,7 @@
 import {Component, ElementRef, HostBinding, ViewChild} from '@angular/core';
 import {FormControl} from '@angular/forms';
+import {DataService} from './data.service';
+
 
 @Component({
   selector: 'app-root',
@@ -11,9 +13,9 @@ export class AppComponent {
   sourceCodeUrl = "https://github.com/oowais/Portfolio";
   toggleControl = new FormControl(false);
   @HostBinding('class') className = '';
-  @ViewChild('main', { static: true }) myDiv: ElementRef | undefined;
+  @ViewChild('main', {static: true}) myDiv: ElementRef | undefined;
 
-  constructor() {
+  constructor(private dataService: DataService) {
   }
 
   ngOnInit(): void {
@@ -24,8 +26,7 @@ export class AppComponent {
       if (mode) {
         (this.myDiv as ElementRef).nativeElement.classList.remove(darkClassName);
         (this.myDiv as ElementRef).nativeElement.classList.add(lightClassName);
-      }
-      else {
+      } else {
         (this.myDiv as ElementRef).nativeElement.classList.remove(lightClassName);
         (this.myDiv as ElementRef).nativeElement.classList.add(darkClassName);
       }
@@ -35,5 +36,9 @@ export class AppComponent {
 
   goToSourceCode(): void {
     window.open(this.sourceCodeUrl, "_blank");
+  }
+
+  openResume () {
+    this.dataService.openFile('../assets/Resume.pdf');
   }
 }

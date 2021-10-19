@@ -7,9 +7,17 @@
     <mat-card class="ed-card">
       <mat-card-subtitle><b>Master of Science in Media Informatics</b></mat-card-subtitle>
       <mat-card-content>
-        1.8 grade (German scale) <br/>
-        RWTH Aachen University, Germany
+        <mat-list>
+          <mat-list-item>Grade: 1.8 (German scale)</mat-list-item>
+          <mat-list-item><mat-icon>place</mat-icon>Aachen, Germany</mat-list-item>
+        </mat-list>
       </mat-card-content>
+      <mat-card-actions align="end">
+        <button class="mat-elevation-z2 source-code-btn btn" mat-button color="accent"
+                (click)="openLink('https://www.rwth-aachen.de/')">
+          RWTH Aachen University <mat-icon>open_in_new</mat-icon>
+        </button>
+      </mat-card-actions>
     </mat-card>
   </mat-tab>
 
@@ -17,9 +25,17 @@
     <mat-card class="ed-card">
       <mat-card-subtitle><b>Bachelor of Technology in Computer Engineering</b></mat-card-subtitle>
       <mat-card-content>
-        7.9/10 <br/>
-        Jama Millia Islamia, India
+        <mat-list>
+          <mat-list-item>Grade: 7.9/10</mat-list-item>
+          <mat-list-item><mat-icon>place</mat-icon>New Delhi, India</mat-list-item>
+        </mat-list>
       </mat-card-content>
+      <mat-card-actions align="end">
+        <button class="mat-elevation-z2 source-code-btn btn" mat-button color="accent"
+                (click)="openLink('https://www.jmi.ac.in/fet')">
+          Jamia Millia Islamia FET<mat-icon>open_in_new</mat-icon>
+        </button>
+      </mat-card-actions>
     </mat-card>
   </mat-tab>
 

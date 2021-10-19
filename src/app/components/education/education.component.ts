@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService} from '../../data.service';
 
 @Component({
   selector: 'app-education',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
@@ -24,4 +25,8 @@ export class EducationComponent implements OnInit {
     'Communications in Digital Age',
     'Language, Mind and Media'
   ]
+
+  openLink (url: string) {
+    this.dataService.openLink(url);
+  }
 }

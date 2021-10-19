@@ -2,15 +2,14 @@
   <mat-card-title>Work Experience</mat-card-title>
 </mat-card>
 <mat-accordion class="work-ex-headers-align">
-  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+  <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <b>Student Research Scientist</b>
       </mat-panel-title>
       <mat-panel-description>
         <span>Sep 2018 - Sep 2021</span>
-        <div>
-          Fraunhofer FKIE
+        <div> Fraunhofer FKIE
           <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
                   (click)="openLink('https://www.fkie.fraunhofer.de/')">
             <mat-icon>open_in_new</mat-icon>
@@ -47,7 +46,7 @@
     </mat-action-row>
   </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+  <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <b>Systems Engineer</b>
@@ -115,7 +114,7 @@
     </mat-action-row>
   </mat-expansion-panel>
 
-  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+  <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle class="expansion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
         <b>Computer Engineer (Trainee)</b>

@@ -67,8 +67,8 @@
       <mat-card-subtitle><b>Relevant courses studied in curriculum:</b></mat-card-subtitle>
       <mat-card-content>
         <mat-list>
-          <mat-list-item *ngFor="let course of courses">{{course}}
-            <mat-divider></mat-divider>
+          <mat-list-item *ngFor="let course of courses; last as lastCourse">{{course}}
+            <mat-divider *ngIf="!lastCourse"></mat-divider>
           </mat-list-item>
         </mat-list>
       </mat-card-content>

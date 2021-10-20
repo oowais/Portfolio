@@ -9,13 +9,22 @@
       <mat-card-content>
         <mat-list>
           <mat-list-item>Grade: 1.8 (German scale)</mat-list-item>
-          <mat-list-item><mat-icon>place</mat-icon>Aachen, Germany</mat-list-item>
+          <mat-list-item>
+            <mat-icon>place</mat-icon>
+            Aachen, Germany
+          </mat-list-item>
         </mat-list>
       </mat-card-content>
       <mat-card-actions align="end">
+        <button class="mat-elevation-z2 btn source-code-btn" mat-button color="primary"
+                (click)="openTranscript('ms')">
+          View Transcript
+          <mat-icon>task</mat-icon>
+        </button>
         <button class="mat-elevation-z2 source-code-btn btn" mat-button color="primary"
                 (click)="openLink('https://www.rwth-aachen.de/')">
-          RWTH Aachen University <mat-icon>open_in_new</mat-icon>
+          RWTH Aachen University
+          <mat-icon>open_in_new</mat-icon>
         </button>
       </mat-card-actions>
     </mat-card>
@@ -27,13 +36,22 @@
       <mat-card-content>
         <mat-list>
           <mat-list-item>Grade: 7.9/10</mat-list-item>
-          <mat-list-item><mat-icon>place</mat-icon>New Delhi, India</mat-list-item>
+          <mat-list-item>
+            <mat-icon>place</mat-icon>
+            New Delhi, India
+          </mat-list-item>
         </mat-list>
       </mat-card-content>
       <mat-card-actions align="end">
+        <button class="mat-elevation-z2 btn source-code-btn" mat-button color="primary"
+                (click)="openTranscript('btech')">
+          View Transcript
+          <mat-icon>task</mat-icon>
+        </button>
         <button class="mat-elevation-z2 source-code-btn btn" mat-button color="primary"
                 (click)="openLink('https://www.jmi.ac.in/fet')">
-          Jamia Millia Islamia FET<mat-icon>open_in_new</mat-icon>
+          Jamia Millia Islamia FET
+          <mat-icon>open_in_new</mat-icon>
         </button>
       </mat-card-actions>
     </mat-card>
@@ -44,7 +62,9 @@
       <mat-card-subtitle><b>Relevant courses studied in curriculum:</b></mat-card-subtitle>
       <mat-card-content>
         <mat-list>
-          <mat-list-item *ngFor="let course of courses">{{course}}<mat-divider></mat-divider></mat-list-item>
+          <mat-list-item *ngFor="let course of courses">{{course}}
+            <mat-divider></mat-divider>
+          </mat-list-item>
         </mat-list>
       </mat-card-content>
     </mat-card>

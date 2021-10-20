@@ -29,4 +29,12 @@ export class EducationComponent implements OnInit {
   openLink (url: string) {
     this.dataService.openLink(url);
   }
+
+  openTranscript (option: string) {
+    if ('ms' === option) {
+      this.dataService.openFile('../assets/transcript_MS.pdf');
+    } else if ('btech' === option) {
+      this.dataService.openFile('../assets/transcript_Btech.pdf')
+    }
+  }
 }

@@ -8,15 +8,16 @@
         <b>{{exp.title}}</b>
       </mat-panel-title>
       <mat-panel-description>
-        <span matTooltip="Job duration">{{exp.duration}}</span>
-        <div matTooltip="Company"> {{exp.company}}
-          <button class="mat-elevation-z2 source-code-btn" mat-flat-button color="primary"
+
+        <div matTooltip="Company">
+          <button class="mat-elevation-z2 source-code-btn" mat-stroked-button color="primary"
                   (click)="openLink(exp.companyUrl)">
-            <mat-icon>open_in_new</mat-icon>
+            {{exp.company}} <mat-icon>open_in_new</mat-icon>
           </button>
         </div>
       </mat-panel-description>
     </mat-expansion-panel-header>
+    <span matTooltip="Job duration">{{exp.duration}}</span>
     <ul>
       <li *ngFor="let task of exp.tasks">{{task}}</li>
     </ul>

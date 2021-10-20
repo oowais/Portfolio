@@ -10,23 +10,25 @@
         <mat-list>
           <mat-list-item>Grade: 1.8 (German scale)</mat-list-item>
           <mat-list-item>
+            <button class="mat-elevation-z2 btn source-code-btn" mat-stroked-button color="accent"
+                    (click)="openTranscript('ms')">
+              Transcript
+              <mat-icon>task</mat-icon>
+            </button>
+          </mat-list-item>
+          <mat-list-item>
             <mat-icon>place</mat-icon>
             Aachen, Germany
           </mat-list-item>
+          <mat-list-item>
+            <button class="mat-elevation-z2 source-code-btn btn" mat-stroked-button color="accent"
+                    (click)="openLink('https://www.rwth-aachen.de/')">
+              RWTH Aachen University
+              <mat-icon>open_in_new</mat-icon>
+            </button>
+          </mat-list-item>
         </mat-list>
       </mat-card-content>
-      <mat-card-actions align="end">
-        <button class="mat-elevation-z2 btn source-code-btn" mat-button color="primary"
-                (click)="openTranscript('ms')">
-          Transcript
-          <mat-icon>task</mat-icon>
-        </button>
-        <button class="mat-elevation-z2 source-code-btn btn" mat-button color="primary"
-                (click)="openLink('https://www.rwth-aachen.de/')">
-          RWTH Aachen University
-          <mat-icon>open_in_new</mat-icon>
-        </button>
-      </mat-card-actions>
     </mat-card>
   </mat-tab>
 
@@ -37,23 +39,26 @@
         <mat-list>
           <mat-list-item>Grade: 7.9/10</mat-list-item>
           <mat-list-item>
+            <button class="mat-elevation-z2 btn source-code-btn" mat-stroked-button color="accent"
+                    (click)="openTranscript('btech')">
+              Transcript
+              <mat-icon>task</mat-icon>
+            </button>
+          </mat-list-item>
+          <mat-list-item>
             <mat-icon>place</mat-icon>
             New Delhi, India
           </mat-list-item>
+          <mat-list-item>
+            <button class="mat-elevation-z2 source-code-btn btn" mat-stroked-button color="accent"
+                    (click)="openLink('https://www.jmi.ac.in/fet')">
+              Jamia Millia Islamia FET
+              <mat-icon>open_in_new</mat-icon>
+            </button>
+          </mat-list-item>
         </mat-list>
+
       </mat-card-content>
-      <mat-card-actions align="end">
-        <button class="mat-elevation-z2 btn source-code-btn" mat-button color="primary"
-                (click)="openTranscript('btech')">
-          View Transcript
-          <mat-icon>task</mat-icon>
-        </button>
-        <button class="mat-elevation-z2 source-code-btn btn" mat-button color="primary"
-                (click)="openLink('https://www.jmi.ac.in/fet')">
-          Jamia Millia Islamia FET
-          <mat-icon>open_in_new</mat-icon>
-        </button>
-      </mat-card-actions>
     </mat-card>
   </mat-tab>
 

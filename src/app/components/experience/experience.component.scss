@@ -19,6 +19,8 @@
 .list {
   max-height: 30em;
   overflow-y: auto;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .expansion-panel {

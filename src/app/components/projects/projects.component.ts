@@ -55,7 +55,7 @@ export class ProjectsComponent implements OnInit {
       langUsed: ''
     },
     {
-      title: 'OpenCV based Trajectory Tracking of a Laser Beam',
+      title: 'Trajectory Tracking of a Laser Beam',
       date: '2013',
       url: '',
       text: 'Tracking of a laser beam and rendering it on the display screen using projector using OpenCV.',

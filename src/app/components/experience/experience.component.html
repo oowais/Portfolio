@@ -1,14 +1,13 @@
 <mat-card class="work-ex-card btn">
   <mat-card-title>Work Experience</mat-card-title>
 </mat-card>
-<mat-accordion class="work-ex-headers-align" multi>
+<mat-accordion hideToggle class="work-ex-headers-align" multi>
   <mat-expansion-panel expanded *ngFor="let exp of experiences">
     <mat-expansion-panel-header>
       <mat-panel-title matTooltip="Job title">
         <b>{{exp.title}}</b>
       </mat-panel-title>
-      <mat-panel-description>
-
+      <mat-panel-description class="right-aligned">
         <div matTooltip="Company">
           <button class="mat-elevation-z2 source-code-btn" mat-stroked-button color="primary"
                   (click)="openLink(exp.companyUrl)">

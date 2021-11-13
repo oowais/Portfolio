@@ -76,6 +76,14 @@ export class ProjectsComponent implements OnInit {
       text: 'Source code of current website',
       teamSize: '1',
       langUsed: 'Angular, Typescript'
+    },
+    , {
+      title: 'GitHub User Search',
+      date: 'Nov 2021',
+      url: 'https://github.com/oowais/coding-challenge-user-search',
+      text: 'Input any GitHub username to see their details. Live demo link is located in REAMDE of the GitHub repo.',
+      teamSize: '1',
+      langUsed: 'Angular, Typescript'
     }
   ];
 

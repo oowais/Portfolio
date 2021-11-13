@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  projects: any [] = [
+  projects: any[] = [
     {
       title: 'Jaadu - An Alien in a Terrarium',
       date: 'Oct 2018 – Jan 2019',
@@ -77,7 +77,7 @@ export class ProjectsComponent implements OnInit {
       teamSize: '1',
       langUsed: 'Angular, Typescript'
     },
-    , {
+    {
       title: 'GitHub User Search',
       date: 'Nov 2021',
       url: 'https://github.com/oowais/coding-challenge-user-search',
